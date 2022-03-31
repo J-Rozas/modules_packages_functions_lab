@@ -1,7 +1,13 @@
 from modules.task_list import *
 from modules.output import *
-from data.task_list import *
 from modules.input import *
+
+load_previous_tasks = get_past_tasks_preference()
+
+if load_previous_tasks:
+    from data.task_list import *
+else:
+    tasks = []
 
 while (True):
     print_menu()

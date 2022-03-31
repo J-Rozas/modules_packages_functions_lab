@@ -9,4 +9,6 @@ def get_user_time():
 
 def get_user_task():
     input("Enter task description to search for: ")
-    
+
+def get_past_tasks_preference():
+    return True if input("Do you want to load the previous tasks (y/any other key)?: ") == "y" else False
